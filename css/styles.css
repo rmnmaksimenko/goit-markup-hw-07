@@ -42,13 +42,11 @@ p {
 
 a {
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -146,9 +144,8 @@ img {
 
 /* - - - раздел "заказать услугу" - - - */
 
-.hero-section {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero-img.jpg');
+.hero__section {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -161,20 +158,6 @@ img {
 
 .why-us-section {
 }
-
-/* .why-us-block:nth-child(1)::before {
-  display: block;
-  margin-bottom: 30px;
-  display: block;
-  content: '';
-  background-size: initial;
-  background-color: var(--color-background-third);
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('../images/antenna.svg');
-  border-radius: 4px;
-} */
 
 .why-us-icon-container {
   display: flex;
@@ -217,13 +200,11 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  /* margin-bottom: 0; */
 }
 
 /* - - - раздел "чем мы занимаемся" - - - */
 
 .our-work-section {
-  /* margin-bottom: 94px; */
   padding-top: 0;
 }
 
@@ -316,17 +297,6 @@ img {
 }
 
 /* ссылки на соцсети */
-
-/* .instagram-link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  background-image: url('../images/instagram.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  border-radius: 50%;
-} */
 
 .social-link {
   display: flex;
@@ -437,7 +407,7 @@ img {
 
 /* кнопка "заказать услугу" */
 
-.hero-button {
+.hero__button {
   margin-top: 30px;
   display: block;
   margin-right: auto;
@@ -457,8 +427,8 @@ img {
   border-radius: 4px;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -727,8 +697,7 @@ img {
 .portfolio-nav-button:focus {
   background-color: var(--color-fourth);
   color: var(--color-fifth);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -796,8 +765,7 @@ img {
 }
 
 .portfolio-block-link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-block-link:hover .portfolio-block-overlay,
@@ -876,8 +844,7 @@ img {
   width: 528px;
   min-height: 581px;
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
 
