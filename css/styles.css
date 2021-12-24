@@ -50,7 +50,7 @@ button {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hidden-title {
+.title--hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -156,10 +156,7 @@ img {
 
 /* - - - раздел "зачем выбирать нас" - - - */
 
-.why-us-section {
-}
-
-.why-us-icon-container {
+.why-us__icon-container {
   display: flex;
   margin-bottom: 30px;
   background-color: var(--color-background-third);
@@ -169,34 +166,35 @@ img {
   justify-content: center;
 }
 
-.why-us-icon {
+.why-us__icon {
   width: 70px;
   height: 70px;
   background-position: center;
 }
 
-.why-us-list {
+.why-us {
   display: flex;
 }
 
-.why-us-block {
+.why-us__item {
   flex-basis: calc((100% + var(--grit-indent)) / 4 - var(--grit-indent));
   margin-right: var(--grit-indent);
 }
 
-.why-us-block:nth-child(4n) {
+.why-us__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.why-us-title {
+.why-us__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: #212121;
 }
 
-.why-us-paragraph {
+.why-us__text {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -257,6 +255,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  color: var(--color-title);
 }
 
 .our-team-post {
@@ -369,13 +368,6 @@ img {
 }
 
 /* - - - - - - - заголовки - - - - - - - */
-
-/* стиль заголовков */
-
-.title {
-  color: var(--color-title);
-  /* font-weight: 700; */
-}
 
 /* главный заголовок */
 
