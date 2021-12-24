@@ -839,7 +839,7 @@ img {
 
 /* кнопка закрытия модалки */
 
-.modal-close-button {
+.modal__close-button {
   position: absolute;
 
   top: 8px;
@@ -858,13 +858,13 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button:hover,
-.modal-close-button:focus {
+.modal__close-button:hover,
+.modal__close-button:focus {
   /* background-color: var(--color-social-network-main); */
   fill: var(--color-fourth);
 }
 
-.modal-close-icon {
+.modal__close-icon {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -875,7 +875,7 @@ img {
 
 /* заголовок в модалке */
 
-.modal-heading {
+.modal__title {
   display: flex;
   justify-content: center;
   font-weight: 700;
@@ -889,26 +889,26 @@ img {
 
 /* отступы формы */
 
-.form-container {
+.form__container {
   margin-top: 12px;
 }
 
 /* расположение элементов в форме */
 
-.form-field {
+.form__label {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.textarea-margin {
+.form__textarea--margin {
   margin-bottom: 20px;
 }
 
 /* стиль текста метки */
 
-.label-text {
+.form__text {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
@@ -917,7 +917,7 @@ img {
 
 /* стиль окон ввода */
 
-.entry-field {
+.form__input {
   box-sizing: border-box;
   height: 40px;
   padding-left: 42px;
@@ -930,7 +930,7 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea {
+.form__textarea {
   box-sizing: border-box;
   resize: none;
   height: 120px;
@@ -943,13 +943,13 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea::placeholder {
+.form__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
 /* стиль иконки */
 
-.entry-field-icon {
+.form__icon {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -960,19 +960,19 @@ img {
 
 /* анимация иконки */
 
-.form-field .entry-field-icon {
+.form__label .form__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* стиль окна ввода при фокусе */
 
-.entry-field:focus,
-.textarea:focus {
+.form__input:focus,
+.form__textarea:focus {
   border: 1px solid var(--color-fourth);
   outline: 0px;
 }
 
-.form-field:focus-within > .entry-field-icon {
+.form__label:focus-within > .form__icon {
   fill: var(--color-fourth);
 }
 
@@ -980,7 +980,7 @@ img {
 
 /* стиль строки с чекбоксом */
 
-.i-agree {
+.checkbox__label {
   display: flex;
   width: fit-content;
   align-items: center;
@@ -995,7 +995,7 @@ img {
 
 /* скрытый стандартный чекбокс */
 
-.i-agree-checkbox {
+.checkbox__input {
   /* appearance: none;
   position: absolute; */
   position: absolute;
@@ -1010,23 +1010,19 @@ img {
 
 /* кастомный чекбокс в нечекнутом состоянии */
 
-.i-agree-icon-container {
+.checkbox__icon {
   display: flex;
   width: 12px;
   height: 11px;
   box-shadow: 0 0 0 2px var(--color-title);
   border-radius: 2px;
   background-color: var(--color-background-main);
-
-  /* background-image: url(../icons-form/icon-uncheck.svg);
-  background-position: center;
-  background-size: contain; */
   margin-right: 7px;
 }
 
 /* чекнутый чекбокс */
 
-.i-agree-checkbox:checked + .i-agree-icon-container {
+.checkbox__input:checked + .checkbox__icon {
   border-radius: 2px;
   box-shadow: 0 0 0 2px var(--color-fourth);
   background-image: url(../icons-form/icon-check.svg);
@@ -1036,24 +1032,24 @@ img {
   background-color: var(--color-fourth);
 }
 
-.i-agree-checkbox:not(:checked):focus + .i-agree-icon-container {
+.checkbox__input:not(:checked):focus + .checkbox__icon {
   box-shadow: 0 0 0 2px var(--color-title), 0 0 0 4px var(--color-fourth);
 }
 
-.i-agree-checkbox:checked:focus + .i-agree-icon-container {
+.checkbox__input:checked:focus + .checkbox__icon {
   box-shadow: 0 0 0 2px var(--color-fourth), 0 0 0 4px var(--color-title);
 }
 
 /* оформление ссылки договора */
 
-.i-agree-link {
+.checkbox__link {
   text-decoration: underline;
   color: var(--color-fourth);
 }
 
 /* кнопка отправки формы */
 
-.form-submit {
+.form__submit {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -1071,7 +1067,7 @@ img {
   border-radius: 4px;
 }
 
-.form-submit:hover,
-.form-submit:focus {
+.form__submit:hover,
+.form__submit:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
