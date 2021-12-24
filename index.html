@@ -6,19 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="icon" type=".images/svg" href="/images/w.svg#webicon" />
-
     <!-- Добавление шрифтов Raleway 700 и Roboto 400 / 500 / 700 / 900 -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <!-- Подключение modern-normalize  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!-- подключение стилей документа -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -28,36 +20,38 @@
         <!-- навагация -->
         <nav class="nav">
           <!-- логотип / главная страница-->
-          <a href="./index.html" class="logo-link">Web<span class="logo-link-dark">Studio</span></a>
+          <a href="./index.html" class="logo__link">Web<span class="logo__link--dark">Studio</span></a>
 
           <!-- навагация по сайту -->
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link link-backlight this-page"> Студия</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link--backlight nav__link--underline"> Студия</a>
             </li>
 
-            <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link link-backlight">Портфолио</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link link--backlight">Портфолио</a>
             </li>
 
-            <li class="nav-item"><a href="#" class="nav-link link-backlight">Контакты</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link--backlight">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <!-- почта и телефон -->
-        <ul class="mail-phone-list">
-          <li class="mail-phone-list-element">
-            <a href="mailto:info@devstudio.com" class="mail-phone-link link-backlight"
-              ><svg class="mail-phone-icon" width="16" height="12">
+        <ul class="header-contaсts__list">
+          <li class="header-contaсts__item">
+            <a href="mailto:info@devstudio.com" class="header-contaсts__link link--backlight"
+              ><svg class="header-contaсts__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="mail-phone-list-element">
-            <a href="tel:+380961111111" class="mail-phone-link link-backlight"
-              ><svg class="mail-phone-icon" width="10" height="16">
+          <li class="header-contaсts__item">
+            <a href="tel:+380961111111" class="header-contaсts__link link--backlight"
+              ><svg class="header-contaсts__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -91,9 +85,7 @@
                 </svg>
               </div>
               <h3 class="title why-us-title">Внимание к деталям</h3>
-              <p class="why-us-paragraph">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
+              <p class="why-us-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
 
             <li class="why-us-block">
@@ -103,9 +95,7 @@
                 </svg>
               </div>
               <h3 class="title why-us-title">Пунктуальность</h3>
-              <p class="why-us-paragraph">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-              </p>
+              <p class="why-us-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
 
             <li class="why-us-block">
@@ -115,9 +105,7 @@
                 </svg>
               </div>
               <h3 class="title why-us-title">Планирование</h3>
-              <p class="why-us-paragraph">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
-              </p>
+              <p class="why-us-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
 
             <li class="why-us-block">
@@ -127,9 +115,7 @@
                 </svg>
               </div>
               <h3 class="title why-us-title">Современные технологии</h3>
-              <p class="why-us-paragraph">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-              </p>
+              <p class="why-us-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -398,33 +384,23 @@
         <!-- раздел контакты -->
         <div class="footer-left-part">
           <!-- лого -->
-          <a href="./index.html" class="logo-link logo-footer"
-            >Web<span class="logo-link-light">Studio</span></a
-          >
+          <a href="./index.html" class="logo__link logo-footer">Web<span class="logo__link--light">Studio</span></a>
           <!-- контакты -->
           <address class="address">
             <ul class="contacts-list">
               <!-- физический адрес -->
               <li class="contacts-block">
-                <a
-                  href="https://goo.gl/maps/tme8VJcGeJXMZeD66"
-                  class="map-address-link link-backlight"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+                <a href="https://goo.gl/maps/tme8VJcGeJXMZeD66" class="map-address-link link--backlight">г. Киев, пр-т Леси Украинки, 26</a>
               </li>
 
               <!-- эл. почта -->
               <li class="contacts-block">
-                <a href="mailto:info@example.com" class="mail-contacts-link link-backlight"
-                  >info@example.com</a
-                >
+                <a href="mailto:info@example.com" class="mail-contacts-link link--backlight">info@example.com</a>
               </li>
 
               <!-- моб. телефон -->
               <li class="contacts-block">
-                <a href="tel:+380991111111" class="phone-contacts-link link-backlight"
-                  >+38 099 111 11 11</a
-                >
+                <a href="tel:+380991111111" class="phone-contacts-link link--backlight">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -535,9 +511,7 @@
             <input class="i-agree-checkbox" type="checkbox" name="i-agree" />
             <span class="i-agree-icon-container"></span>
             Соглашаюсь заказывать&nbsp
-            <a href="https://i.imgur.com/vLyztrC.png" target="_blank" class="i-agree-link"
-              >Пиццу с анчоусами</a
-            >
+            <a href="https://i.imgur.com/vLyztrC.png" target="_blank" class="i-agree-link">Пиццу с анчоусами</a>
           </label>
 
           <!-- кнопка "отправить" -->

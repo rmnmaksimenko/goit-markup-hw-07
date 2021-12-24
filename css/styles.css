@@ -117,15 +117,15 @@ img {
   align-items: center;
 }
 
-/* почта-телефон в шапке */
+/* контакты в шапке */
 
-.mail-phone-list {
+.header-contaсts__list {
   display: flex;
   margin-left: auto;
   align-self: center;
 }
 
-.mail-phone-link {
+.header-contaсts__link {
   align-items: center;
   display: flex;
   color: var(--color-main);
@@ -135,24 +135,18 @@ img {
   letter-spacing: 0.02em;
 }
 
-.mail-phone-icon {
+.header-contaсts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.mail-phone-list-element:not(:last-child) {
+.header-contaсts__item:not(:last-child) {
   margin-right: 50px;
 }
-
-/* .mail-phone-list-element:last-child {
-  margin-right: 0;
-} */
 
 /* - - - раздел "заказать услугу" - - - */
 
 .hero-section {
-  /* background-color: var(--color-background-second); */
-
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero-img.jpg');
   background-size: cover;
@@ -161,10 +155,6 @@ img {
 
   padding-top: 200px;
   padding-bottom: 200px;
-  /* background-size: inherit;
-  background-origin: content-box;
-  background-clip: content-box; */
-  /* background-attachment: fixed; */
 }
 
 /* - - - раздел "зачем выбирать нас" - - - */
@@ -476,19 +466,19 @@ img {
 
 /* навигационные ссылки */
 
-.nav-list {
+.nav__list {
   display: flex;
 }
 
-.nav-item {
+.nav__item {
   margin-right: 50px;
 }
 
-.nav-item:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
 
-.nav-link {
+.nav__link {
   position: relative;
   display: flex;
   color: var(--color-third);
@@ -499,7 +489,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.this-page::after {
+.nav__link--underline::after {
   content: '';
   position: absolute;
   height: 4px;
@@ -518,7 +508,7 @@ img {
 
 /* ссылка на веб студию */
 
-.logo-link {
+.logo__link {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -528,23 +518,17 @@ img {
   margin-right: 94px;
 }
 
-.logo-link-dark {
+.logo__link--dark {
   color: var(--color-third);
 }
 
-.logo-link-light {
+.logo__link--light {
   color: var(--color-fifth);
 }
 
 .logo-footer {
   margin-right: 0;
 }
-
-/* .mail-phone-link:hover,
-.mail-phone-link:focus {
-  color: var(--color-fourth);
-} */
-
 /* стиль контактов */
 
 .address {
@@ -577,8 +561,8 @@ img {
   color: var(--color-fifth-transparent);
 }
 
-.link-backlight:hover,
-.link-backlight:focus {
+.link--backlight:hover,
+.link--backlight:focus {
   color: var(--color-fourth);
 }
 
