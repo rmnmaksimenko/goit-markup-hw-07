@@ -47,55 +47,5 @@
   display: flex;
   justify-content: center;
 
-  // отступы в соцсетях
-  &__item:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  //контейнер иконок с ссылками на соцсети
-  &__link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    fill: $color-social-network-main;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-
-    // наведение на контейнер
-    &:hover,
-    &:focus {
-      fill: $color-accent-text;
-      background-color: $color-accent;
-    }
-  }
-
-  //размер иконок
-  &__icon {
-    width: 20px;
-    height: 20px;
-  }
+  @include soc-container($color-social-network-main, $color-background-main);
 }
-
-/* ссылки на соцсети */
-
-// .social-network__link {
-//   display: flex;
-//   width: 44px;
-//   height: 44px;
-//   fill: $color-social-network-main;
-//   border-radius: 50%;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// .social-network__icon {
-//   width: 20px;
-//   height: 20px;
-// }
-
-// .social-network__link:hover,
-// .social-network__link:focus {
-//   fill: var(--color-fifth);
-//   background-color: var(--color-fourth);
-// }

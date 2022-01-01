@@ -259,21 +259,5 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px 55px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  border-style: none;
-  color: $color-accent-text;
-  background-color: $color-accent;
-  border-radius: 4px;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+  @include main-button(55px, 55px);
 }

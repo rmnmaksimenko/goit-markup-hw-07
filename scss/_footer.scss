@@ -69,27 +69,7 @@
 .footer-social-network {
   display: flex;
 
-  // соцсети в футере
-  &__link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    fill: $color-accent-text;
-    background-color: $color-social-network-footer-transparent;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-
-    &:hover,
-    &:focus {
-      fill: $color-accent-text;
-      background-color: $color-accent;
-    }
-  }
-  // отступы между ссылками
-  &__item:not(:last-child) {
-    margin-right: 10px;
-  }
+  @include soc-container($color-accent-text, $color-social-network-footer-transparent);
 }
 
 /* стиль раздела с подпиской на рассылку */
@@ -131,18 +111,7 @@
 
 .footer-spam__submit {
   display: flex;
-  padding: 10px 28px 10px 29px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  border-style: none;
-  color: $color-accent-text;
-  background-color: $color-accent;
-  border-radius: 4px;
+  @include main-button(29px, 28px);
 
   &-text {
     display: flex;
