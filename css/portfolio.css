@@ -297,7 +297,7 @@ button {
 }
 
 /* контакты в шапке */
-.header-contaсts__list {
+.header-contaсts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,7 +305,6 @@ button {
   -ms-flex-item-align: center;
       align-self: center;
 }
-
 .header-contaсts__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -319,12 +318,10 @@ button {
   line-height: 1.142;
   letter-spacing: 0.02em;
 }
-
 .header-contaсts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
-
 .header-contaсts__item:not(:last-child) {
   margin-right: 50px;
 }

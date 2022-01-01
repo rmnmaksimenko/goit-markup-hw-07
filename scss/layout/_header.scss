@@ -21,29 +21,29 @@
 
 /* контакты в шапке */
 
-.header-contaсts__list {
+.header-contaсts {
   display: flex;
   margin-left: auto;
   align-self: center;
-}
 
-.header-contaсts__link {
-  align-items: center;
-  display: flex;
-  color: $color-primary;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-}
+  &__link {
+    align-items: center;
+    display: flex;
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+  }
 
-.header-contaсts__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 
-.header-contaсts__item:not(:last-child) {
-  margin-right: 50px;
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 /* навигационные ссылки */
