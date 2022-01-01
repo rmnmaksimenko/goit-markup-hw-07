@@ -404,7 +404,6 @@ button {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }

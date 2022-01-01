@@ -37,10 +37,11 @@
       color: $color-transparent;
     }
   }
-}
 
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
+  // отступы между ссылками
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 /* заголовки в футере */
@@ -87,6 +88,8 @@
   margin-right: 12px;
 }
 
+// поле ввода почты
+
 .footer-spam__input {
   width: 358px;
   height: 50px;
@@ -108,6 +111,8 @@
     outline: 0px;
   }
 }
+
+// кнопка подтверждения рассылки
 
 .footer-spam__submit {
   display: flex;

@@ -1,10 +1,17 @@
+// общие стили документа
 @import './base/modern-normalize';
-@import './base/variables';
+@import './utils/variables';
 @import './base/page-style';
+
+// шаблоны
 @import './utils/mixins';
+
+// лого, шапка и футер
 @import './layout/logo';
 @import './layout/header';
 @import './layout/footer';
+
+// стили страницы
 @import './pages/hero';
 @import './pages/why-us';
 @import './pages/work';
